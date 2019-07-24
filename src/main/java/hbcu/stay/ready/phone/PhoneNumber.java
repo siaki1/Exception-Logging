@@ -7,6 +7,7 @@ public final class PhoneNumber {
     private final String phoneNumberString;
 
     // default constructor is uncallable
+
     private PhoneNumber() throws InvalidPhoneNumberFormatException {
         this(null);
     }
@@ -19,6 +20,7 @@ public final class PhoneNumber {
         }
         this.phoneNumberString = phoneNumber;
     }
+
 
     public String getAreaCode() {
         return toString().substring(1, 4);
